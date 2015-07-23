@@ -40,6 +40,19 @@
 	\renewcommand{\headrulewidth}{0pt}
 	\renewcommand{\footrulewidth}{0pt}
 }
+\fancypagestyle{mainmatter}{
+  \fancyhead{}
+  \fancyfoot{}
+  \if@twoside
+    \fancyfoot[RO]{\zihao{-5}\thepage}
+    \fancyfoot[LE]{\zihao{-5}\thepage} \fancyfoot
+  \else
+    \fancyfoot[C]{\thepage}
+  \fi
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
 
 %%%%%%%%table of contents%%%%%%%%
 \RequirePackage{titletoc}
@@ -68,6 +81,19 @@
   \clearpage
   \@mainmatterfalse
   \pagestyle{frontmatter}
+}
+
+\newcommand{\contentsmatter}{%
+  \@mainmattertrue
+  \pagestyle{mainmatter}
+  \setcounter{page}{1}
+  \pagenumbering{Roman}
+}
+
+\renewcommand{\mainmatter}{%
+  	\clearpage
+	\setcounter{page}{1}
+	\pagenumbering{arabic}
 }
 
 % Redifine the title page
