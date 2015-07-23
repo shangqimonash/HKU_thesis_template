@@ -12,10 +12,10 @@
 
 % Import the global macro 
 \RequirePackage{ifthen}
-
+\RequirePackage{url}
 % Set the font style
 \RequirePackage{palatino}
-
+\RequirePackage{bm}
 % Set up margin
 \RequirePackage{geometry}
 \newgeometry{%
@@ -54,6 +54,8 @@
 
 %%%%%%%%graphics%%%%%%%%
 \RequirePackage{graphicx}
+\RequirePackage{caption}
+\RequirePackage{subcaption}
 \DeclareGraphicsExtensions{.eps,.ps,.jpg,.bmp}
 \graphicspath{{figure/}}
 
