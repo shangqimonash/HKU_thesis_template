@@ -72,9 +72,14 @@
 \DeclareGraphicsExtensions{.eps,.ps,.jpg,.bmp}
 \graphicspath{{figure/}}
 
+%%%%%%%%bibliography%%%%%%%%
+\bibliographystyle{unsrt}
+\RequirePackage[numbers,sort&compress]{natbib}
+\renewcommand{\bibname}{References}
 
 %%%%%%%%other settings%%%%%%%%
 \RequirePackage{setspace}
+\hyphenation{techno-logy com-ponent}
 
 % front matter before main body
 \renewcommand{\frontmatter}{%
