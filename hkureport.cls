@@ -44,10 +44,10 @@
   \fancyhead{}
   \fancyfoot{}
   \if@twoside
-    \fancyfoot[RO]{\fontsize{12pt}\thepage}
-    \fancyfoot[LE]{\fontsize{12pt}\thepage} \fancyfoot
+    \fancyfoot[RO]{\thepage}
+    \fancyfoot[LE]{\thepage} \fancyfoot
   \else
-    \fancyfoot[C]{\fontsize{12pt}\thepage}
+    \fancyfoot[C]{\thepage}
   \fi
   \renewcommand{\headrulewidth}{0pt}
   \renewcommand{\footrulewidth}{0pt}
