@@ -13,6 +13,8 @@
 % Import the global macro 
 \RequirePackage{ifthen}
 \RequirePackage{url}
+\RequirePackage[titletoc]{appendix}
+\RequirePackage{hyperref}
 % Set the font style
 \RequirePackage{palatino}
 \RequirePackage{bm}
@@ -37,6 +39,7 @@
 \fancypagestyle{frontmatter}{%
 	\pagestyle{empty}
 	\fancyhf{}
+	\setlength{\parindent}{2em}
 	\renewcommand{\headrulewidth}{0pt}
 	\renewcommand{\footrulewidth}{0pt}
 }
@@ -44,8 +47,8 @@
   \fancyhead{}
   \fancyfoot{}
   \if@twoside
-    \fancyfoot[RO]{\thepage}
-    \fancyfoot[LE]{\thepage} \fancyfoot
+    \fancyfoot[RO]{\zihao{-5}\thepage}
+    \fancyfoot[LE]{\zihao{-5}\thepage} \fancyfoot
   \else
     \fancyfoot[C]{\thepage}
   \fi
